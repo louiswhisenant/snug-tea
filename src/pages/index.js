@@ -5,10 +5,11 @@ import Link from 'gatsby-link';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/styling/scss/main.scss';
 import * as vars from '../assets/styling/scss/variables.module.scss';
+import { Container, Row } from 'reactstrap';
 
 import MainNav from '../components/Nav';
-import { Container, Row } from 'reactstrap';
 import BioCard from '../components/BioCard';
+import OfferingCard from '../components/OfferingCard';
 import ScrollDownAlert from '../components/ScrollDownAlert';
 import Footer from '../components/Footer';
 
@@ -69,6 +70,7 @@ const IndexPage = () => {
 							</Row>
 						</Container>
 					</div>
+
 					<div className='d-none d-md-flex index-about-bios'>
 						<Container>
 							<Row>
@@ -130,6 +132,29 @@ const IndexPage = () => {
 									className='col-10 col-md-3 mx-auto btn btn-1'>
 									Our Services
 								</Link>
+							</Row>
+						</Container>
+					</div>
+
+					<div className='d-none d-md-flex index-services-offerings'>
+						<Container>
+							<Row>
+								<OfferingCard
+									img={`https://images.unsplash.com/photo-1563822249366-3efb23b8e0c9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80`}
+									title={`Fine Tea Imports`}
+									desc={`Lorem ipsum dolor sit amet
+									consectetur adipisicing elit.
+									Laborum, quo.`}
+									to='/services'
+								/>
+								<OfferingCard
+									img={`https://images.unsplash.com/photo-1597916375337-71d5e4485bcf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80`}
+									title='Event Catering &amp; Tastings'
+									desc='Lorem ipsum dolor sit amet
+									consectetur adipisicing elit.
+									Laborum, quo.'
+									to='/services'
+								/>
 							</Row>
 						</Container>
 					</div>

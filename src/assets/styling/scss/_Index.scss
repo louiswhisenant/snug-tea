@@ -7,10 +7,10 @@
 
 		.index-banner-title {
 			color: darken($dark, 10%);
-			padding: 1rem 2rem;
+			padding: 2rem 4rem;
 			border-radius: 0.2rem;
 			z-index: 2;
-			background-color: darken($color-1, 30%);
+			background-color: darken(rgba($color-1, 0.5), 30%);
 		}
 
 		&.about {
@@ -40,6 +40,28 @@
 
 		&.services {
 			background-color: $color-1;
+			overflow: hidden;
+
+			.bg-1 {
+				position: absolute;
+				top: -50%;
+				left: 25%;
+				height: 100%;
+				width: 100%;
+				background-color: darken($color-2, 10%);
+				z-index: 0;
+				transform: rotate(270deg);
+			}
+			.bg-2 {
+				position: absolute;
+				top: -50%;
+				left: -50%;
+				height: 125%;
+				width: 150%;
+				background-color: $color-2;
+				z-index: 0;
+				transform: rotate(75deg);
+			}
 
 			.index-banner-title {
 				color: $dark;

@@ -1,0 +1,60 @@
+.offering {
+	padding: 1rem;
+	.offering-card {
+		padding: 1rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+		text-align: center;
+		min-height: 25rem;
+		border: none;
+
+		.offering-img {
+			height: 15rem;
+			min-width: 15rem;
+			border-radius: 50%;
+			object-fit: cover;
+		}
+
+		.offering-info {
+			padding: 2rem;
+			border-radius: 0.5rem;
+			color: $dark;
+
+			.offering-title {
+				margin-top: 1rem;
+				text-emphasis: bold;
+			}
+
+			.bio-desc {
+				margin-top: 1rem;
+			}
+
+			.offering-btn {
+				// styling
+				margin-top: 1.5rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.offering {
+		.offering-card {
+			flex-direction: column;
+			.offering-img {
+				height: 12rem;
+				min-width: 12rem;
+				margin-bottom: -1.5rem;
+				z-index: 1;
+			}
+			.offering-info {
+				background-color: darken($color-1, 35%);
+				color: $dark;
+				min-height: 20rem;
+				z-index: 0;
+			}
+		}
+	}
+}
