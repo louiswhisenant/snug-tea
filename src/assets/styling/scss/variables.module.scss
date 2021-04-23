@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// font-family: 'Montserrat', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+// font-family: 'Orelega One', cursive;
+
+$dark: #333;
+$light: #ccc;
+$color-1: #d4e9eb;
+$color-2: #af622e;
+
+$font-1: 'Montserrat', sans-serif;
+$font-2: 'Orelega One', cursive;
+
+:export {
+	light: $light;
+	dark: $dark;
+	colorOne: $color-1;
+	colorOne25: rgba($color-1, 0.25);
+	colorOne50: rgba($color-1, 0.5);
+	colorOne75: rgba($color-1, 0.75);
+	colorTwo: $color-2;
+	colorTwo25: rgba($color-2, 0.25);
+	colorTwo50: rgba($color-2, 0.5);
+	colorTwo75: rgba($color-2, 0.75);
+}

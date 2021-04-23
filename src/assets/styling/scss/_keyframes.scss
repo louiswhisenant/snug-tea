@@ -1,0 +1,23 @@
+@keyframes bounce {
+	0% {
+		bottom: 2rem;
+	}
+	50% {
+		bottom: 3rem;
+	}
+	100% {
+		bottom: 2rem;
+	}
+}
+
+@keyframes fadeIn5 {
+	0% {
+		opacity: 0;
+	}
+	80% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.5;
+	}
+}

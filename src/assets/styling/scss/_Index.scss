@@ -1,0 +1,85 @@
+#index-content {
+	padding-top: 100vh;
+
+	.index-banner-wrapper {
+		background-color: $color-2;
+		position: relative;
+
+		.index-banner-title {
+			color: darken($dark, 10%);
+			padding: 1rem 2rem;
+			border-radius: 0.2rem;
+			z-index: 2;
+			background-color: darken($color-1, 30%);
+		}
+
+		&.about {
+			overflow: hidden;
+
+			.bg-1 {
+				position: absolute;
+				top: -25%;
+				right: -25%;
+				height: 200%;
+				width: 100%;
+				background-color: darken($color-1, 15%);
+				z-index: 0;
+				transform: rotate(320deg);
+			}
+			.bg-2 {
+				position: absolute;
+				top: 75%;
+				left: -25%;
+				height: 200%;
+				width: 150%;
+				background-color: darken($color-1, 60%);
+				z-index: 0;
+				transform: rotate(10deg);
+			}
+		}
+
+		&.services {
+			background-color: $color-1;
+
+			.index-banner-title {
+				color: $dark;
+			}
+		}
+	}
+
+	.index-blurb-anchor {
+		height: 50vh;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.index-blurb-bg {
+			position: absolute;
+			height: 50vh;
+			width: 100%;
+			object-fit: cover;
+			filter: brightness(50%) contrast(70%);
+		}
+
+		.index-blurb {
+			text-align: center;
+			color: $light;
+		}
+	}
+
+	#index-about {
+		.index-about-bios {
+			min-height: 50vh;
+			padding-top: 3rem;
+		}
+	}
+
+	#index-services {
+		// styling
+	}
+
+	#index-contact {
+		// styling
+	}
+}

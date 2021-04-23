@@ -1,0 +1,31 @@
+@import 'variables.module.scss';
+@import 'mixins.scss';
+
+// Components
+@import '_Nav.scss';
+@import '_BioCard.scss';
+
+// Pages
+@import '_Index.scss';
+@import '_notFound.scss';
+
+// Keyframes
+@import '_keyframes.scss';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	// overflow-x: hidden;
+	font-family: $font-1;
+}
+
+a {
+	text-decoration: none;
+	color: $dark;
+
+	&:hover {
+		text-decoration: none;
+		color: $color-2;
+	}
+}
