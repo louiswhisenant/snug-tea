@@ -1,7 +1,8 @@
 import React from 'react';
+import Link from 'gatsby-link';
 import { Card } from 'reactstrap';
 
-const BioCard = ({ img, name, occupation }) => {
+const BioCard = ({ id, img, name, occupation }) => {
 	return (
 		<div className='col-xl-3 col-md-6 bio'>
 			<Card className='bio-card'>
@@ -10,6 +11,9 @@ const BioCard = ({ img, name, occupation }) => {
 					<h3 className='bio-name'>{name}</h3>
 					<h4 className='bio-occupation'>{occupation}</h4>
 				</div>
+				<Link to={`/about#${id}`} className='btn btn-1'>
+					Learn More
+				</Link>
 			</Card>
 		</div>
 	);

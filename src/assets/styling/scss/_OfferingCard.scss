@@ -38,23 +38,3 @@
 		}
 	}
 }
-
-@media (min-width: 992px) {
-	.offering {
-		.offering-card {
-			flex-direction: column;
-			.offering-img {
-				height: 12rem;
-				min-width: 12rem;
-				margin-bottom: -1.5rem;
-				z-index: 1;
-			}
-			.offering-info {
-				background-color: darken($color-1, 35%);
-				color: $dark;
-				min-height: 20rem;
-				z-index: 0;
-			}
-		}
-	}
-}

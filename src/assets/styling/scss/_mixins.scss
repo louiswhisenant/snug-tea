@@ -1,87 +1,5 @@
-.jumbotron {
-	width: 100%;
-	height: 100vh;
-	padding: 0;
-	border-radius: 0;
-	position: absolute;
-	z-index: 2;
-
-	.splash-img {
-		object-fit: cover;
-		width: 100%;
-		height: 100%;
-		filter: brightness(95%) contrast(90%) saturate(150%);
-	}
-
-	.slug {
-		position: absolute;
-		top: 25%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		z-index: 1;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-
-		h2 {
-			text-align: center;
-			margin: 0 3rem 0.5rem 3rem;
-		}
-	}
-
-	.tea {
-		text-align: center;
-		color: lighten($light, 25%);
-		font-weight: 300;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-}
-
-@media (min-width: 992px) {
-	.jumbotron {
-		.slug {
-			flex-direction: row;
-
-			.slug-special {
-				color: $color-2;
-			}
-		}
-	}
-}
-
-@media (min-width: 1200px) {
-	.jumbotron {
-		.tea {
-			font-size: 3.5rem;
-		}
-	}
-}
-
-.scroll-down-alert {
-	position: absolute;
-	z-index: 100;
-	bottom: 2rem;
-	left: 50%;
-	transform: translateX(-50%);
-	background-color: $dark;
-	color: $light;
-	width: 2rem;
-	height: 2rem;
-	border-radius: 50%;
-	animation: bounce infinite ease 1s, fadeIn5 ease 5s;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	opacity: 0.5;
-	transition: opacity 1.5s ease;
-
-	&.hide {
-		opacity: 0;
-	}
+.btn {
+	padding: 1rem;
 }
 
 .btn-1 {
@@ -94,14 +12,14 @@
 	}
 
 	&:focus {
-		box-shadow: 0 0 0 0.2rem $color-2;
+		box-shadow: 0 0 0 0.2rem darken($color-1, 25%);
 	}
 
 	&:active {
-		background-color: darken($color-1, 20%);
+		background-color: $color-2;
 		margin-top: 0.1rem;
 		margin-bottom: -0.1rem;
-		color: $color-2;
+		color: $color-1;
 	}
 }
 
@@ -110,27 +28,28 @@
 	color: $light;
 
 	&:hover {
-		background-color: darken($color-2, 10%);
+		background-color: darken($color-2, 5%);
 		color: $color-1;
 	}
 
 	&:focus {
-		box-shadow: 0 0 0 0.2rem $color-1;
+		box-shadow: 0 0 0 0.2rem darken($color-2, 15%);
 	}
 
 	&:active {
-		background-color: darken($color-2, 25%);
+		background-color: darken($color-1, 20%);
 		margin-top: 0.1rem;
 		margin-bottom: -0.1rem;
-		color: $color-1;
+		color: darken($color-1, 50%);
 	}
 }
 
 .banner-title {
-	font-size: 3rem;
+	font-size: 2rem;
 	font-weight: 500;
 	margin-top: 5rem;
 	margin-bottom: 5rem;
+	text-align: center;
 }
 
 .color-1 {

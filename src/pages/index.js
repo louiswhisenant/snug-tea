@@ -8,7 +8,7 @@ import * as vars from '../assets/styling/scss/variables.module.scss';
 import { Container, Row } from 'reactstrap';
 
 import MainNav from '../components/Nav';
-import BioCard from '../components/BioCard';
+import IndexBio from '../components/IndexBio';
 import OfferingCard from '../components/OfferingCard';
 import ScrollDownAlert from '../components/ScrollDownAlert';
 import Footer from '../components/Footer';
@@ -19,9 +19,9 @@ const IndexPage = () => {
 		<main className='main'>
 			<MainNav
 				navBg={vars.colorOne75}
-				navText={vars.dark}
+				navBg2='transparent'
 				collpaseBg={vars.colorOne}
-				collapseText={vars.dark}
+				collapseBg2='transparent'
 			/>
 			<div className='jumbotron'>
 				<img src={splash} alt='' className='splash-img' />
@@ -31,7 +31,7 @@ const IndexPage = () => {
 					<h2>Comfort.</h2>
 					<h2 className='slug-special'>Snug.</h2>
 				</div>
-				<h1 className='tea'>Tea.</h1>
+				<h1 className='slug-center'>Tea.</h1>
 			</div>
 			<ScrollDownAlert />
 			<section id='index-content'>
@@ -74,25 +74,29 @@ const IndexPage = () => {
 					<div className='d-none d-md-flex index-about-bios'>
 						<Container>
 							<Row>
-								<BioCard
+								<IndexBio
 									img={`https://images.unsplash.com/photo-1617209705012-a6a09a695036?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1070&q=80`}
 									name='Jimmy Stewart'
 									occupation='CEO'
+									id='jimmy-stewart'
 								/>
-								<BioCard
+								<IndexBio
 									img={`https://images.unsplash.com/photo-1584997159889-8bb96d0a2217?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80`}
 									name='Gina Lollobrigida'
 									occupation='Marketing'
+									id='gina-lollobrigida'
 								/>
-								<BioCard
+								<IndexBio
 									img={`https://images.unsplash.com/photo-1542909192-2f2241a99c9d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80`}
 									name='James Dean'
 									occupation='Procurement'
+									id='james-dean'
 								/>
-								<BioCard
+								<IndexBio
 									img={`https://images.unsplash.com/photo-1602622021975-dacdcf516c43?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1069&q=80`}
 									name='Olivia Hussey'
 									occupation='Catering'
+									id='olivia-hussey'
 								/>
 							</Row>
 						</Container>

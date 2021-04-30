@@ -23,8 +23,11 @@ const ScrollDownAlert = () => {
 				hasScrolled ? 'hide' : ''
 			} sda-outer`}>
 			<div className='sda-inner'>
-				<FontAwesomeIcon icon={faChevronDown} />
+				<div className='sda-icon'>
+					<FontAwesomeIcon icon={faChevronDown} />
+				</div>
 			</div>
+			<p className='sda-text'>Scroll</p>
 		</div>
 	);
 };

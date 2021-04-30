@@ -3,15 +3,26 @@
 
 // Components
 @import '_Nav.scss';
-@import '_BioCard.scss';
+@import '_ScrollDownAlert.scss';
+@import '_IndexBio.scss';
+@import '_AboutBio.scss';
 @import '_OfferingCard.scss';
 
 // Pages
 @import '_Index.scss';
+@import '_About.scss';
+@import '_Services.scss';
+@import '_Contact.scss';
 @import '_notFound.scss';
+
+// Classes
+@import '_jumbotron.scss';
 
 // Keyframes
 @import '_keyframes.scss';
+
+// Media Queries
+@import '_mediaQueries.scss';
 
 * {
 	margin: 0;

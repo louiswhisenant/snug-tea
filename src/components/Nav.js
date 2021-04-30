@@ -5,15 +5,17 @@ import { Nav, Navbar, NavbarToggler, Collapse } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
-const MainNav = ({ navBg, navText, collapseBg, collapseText }) => {
+const MainNav = ({ navBg, navBg2, collapseBg, collapseBg2, text }) => {
 	const navRef = useRef();
 	const [isOpen, setIsOpen] = useState(false);
+	const [fade, setFade] = useState(false);
 	const [scrollY, setScrollY] = useState(0);
 
 	// ----------Functions
 
 	const handleToggle = () => {
 		setIsOpen(!isOpen);
+		setFade(true);
 	};
 
 	const handleScroll = useCallback(() => {
@@ -52,12 +54,15 @@ const MainNav = ({ navBg, navText, collapseBg, collapseText }) => {
 		<div
 			id='nav'
 			ref={navRef}
-			style={{ backgroundColor: scrollY > 0 && navBg }}>
+			style={{ backgroundColor: scrollY > 0 ? navBg : navBg2 }}>
 			<Navbar light expand='md'>
 				<Link to='/' className='nav-brand'>
 					Snug Tea
 				</Link>
-				<NavbarToggler onClick={handleToggle}>
+				<NavbarToggler onClick={handleToggle} className='d-md-none'>
+					<p className={`navbar-toggler-text ${fade ? 'fade' : ''}`}>
+						Menu
+					</p>
 					<FontAwesomeIcon
 						icon={faCoffee}
 						className={`navbar-toggler-icon ${
@@ -68,19 +73,33 @@ const MainNav = ({ navBg, navText, collapseBg, collapseText }) => {
 				<Collapse
 					isOpen={isOpen}
 					navbar
-					style={{ backgroundColor: scrollY > 0 && collapseBg }}>
+					style={{
+						backgroundColor: scrollY > 0 ? collapseBg : collapseBg2,
+					}}>
 					<Nav navbar>
-						<Link to='/' className='nav-item'>
+						<Link
+							to='/'
+							className='nav-item'
+							style={{ color: text }}>
 							{' '}
 							Home
 						</Link>
-						<Link to='/about' className='nav-item'>
+						<Link
+							to='/about'
+							className='nav-item'
+							style={{ color: text }}>
 							About
 						</Link>
-						<Link to='/services' className='nav-item'>
+						<Link
+							to='/services'
+							className='nav-item'
+							style={{ color: text }}>
 							Services
 						</Link>
-						<Link to='/contact' className='nav-item'>
+						<Link
+							to='/contact'
+							className='nav-item'
+							style={{ color: text }}>
 							Contact
 						</Link>
 					</Nav>

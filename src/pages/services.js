@@ -1,22 +1,31 @@
 import React from 'react';
-import bottom from '../assets/images/bottom-photo-1458819714733-e5ab3d536722.jpg';
 
 import MainNav from '../components/Nav';
+import ScrollDownAlert from '../components/ScrollDownAlert';
+
+import * as vars from '../assets/styling/scss/variables.module.scss';
 
 const services = () => {
 	return (
-		<main className='main'>
-			<MainNav />
+		<main id='services'>
+			<MainNav
+				navBg={vars.colorOne75}
+				navBg2={vars.colorOne25}
+				collpaseBg={vars.colorOne}
+				collapseBg2={vars.colorOne25}
+			/>
 			<div className='jumbotron'>
-				<img src={bottom} alt='' className='splash-img' />
-				<div className='slug'>
-					<h2>Warm.</h2>
-					<h2>Cozy.</h2>
-					<h2>Comfort.</h2>
-					<h2>Snug.</h2>
-					<h1>Tea.</h1>
+				<img
+					src={`https://images.unsplash.com/photo-1551540827-6c8ae1aaedbb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80`}
+					alt=''
+					className='splash-img'
+				/>
+				<div className='slug-center'>
+					<h2>What we do.</h2>
 				</div>
 			</div>
+
+			<ScrollDownAlert />
 		</main>
 	);
 };

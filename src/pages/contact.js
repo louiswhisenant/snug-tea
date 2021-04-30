@@ -1,21 +1,39 @@
 import React from 'react';
+import { Container, Row } from 'reactstrap';
+import ContactForm from '../components/ContactForm';
 import MainNav from '../components/Nav';
-import left from '../assets/images/left-photo-1523906630133-f6934a1ab2b9.jpg';
+
+import * as vars from '../assets/styling/scss/variables.module.scss';
 
 const contact = () => {
 	return (
-		<main className='main'>
-			<MainNav collapseBg='rgba(51,51,51,.75)' collapseText='#ccc' />
+		<main id='contact'>
+			<MainNav
+				navBg={vars.colorOne}
+				navBg2={vars.colorOne}
+				collpaseBg={vars.colorOne}
+				collapseBg2={vars.colorOne}
+			/>
 			<div className='jumbotron'>
-				<img src={left} alt='' className='splash-img' />
-				<div className='slug'>
-					<h2>Warm.</h2>
-					<h2>Cozy.</h2>
-					<h2>Comfort.</h2>
-					<h2>Snug.</h2>
-					<h1>Tea.</h1>
-				</div>
+				<img
+					src={`https://images.unsplash.com/photo-1615883962708-708904fe162e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=940&q=80`}
+					alt=''
+					className='splash-img'
+				/>
 			</div>
+			<Container className='form-wrapper'>
+				<Row>
+					<div className='col-12 contact-desc'>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Nihil atque eum, ipsum, tempore omnis quisquam
+							culpa tenetur, dolorum totam nesciunt incidunt
+							necessitatibus harum officia at.
+						</p>
+					</div>
+					<ContactForm className='col-12' />
+				</Row>
+			</Container>
 		</main>
 	);
 };

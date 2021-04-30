@@ -6,11 +6,12 @@
 		position: relative;
 
 		.index-banner-title {
-			color: darken($dark, 10%);
-			padding: 2rem 4rem;
-			border-radius: 0.2rem;
+			color: lighten($light, 50%);
 			z-index: 2;
-			background-color: darken(rgba($color-1, 0.5), 30%);
+			background-color: rgba(darken($color-1, 60%), 0.8);
+			margin: 0;
+			width: 100%;
+			padding: 3rem;
 		}
 
 		&.about {
@@ -62,9 +63,30 @@
 				z-index: 0;
 				transform: rotate(75deg);
 			}
+		}
 
-			.index-banner-title {
-				color: $dark;
+		&.contact {
+			overflow: hidden;
+
+			.bg-1 {
+				position: absolute;
+				top: -50%;
+				left: 25%;
+				height: 100%;
+				width: 100%;
+				background-color: darken($color-1, 25%);
+				z-index: 0;
+				transform: rotate(75deg);
+			}
+			.bg-2 {
+				position: absolute;
+				top: -50%;
+				left: -50%;
+				height: 125%;
+				width: 150%;
+				background-color: $color-1;
+				z-index: 0;
+				transform: rotate(280deg);
 			}
 		}
 	}
