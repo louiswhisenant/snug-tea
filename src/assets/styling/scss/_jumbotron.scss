@@ -40,3 +40,23 @@
 		transform: translate(-50%, -50%);
 	}
 }
+
+@media (min-width: $bp-lg) {
+	.jumbotron {
+		.slug {
+			flex-direction: row;
+		}
+
+		.slug-special {
+			color: $color-2;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.jumbotron {
+		.slug-center {
+			font-size: 3.5rem;
+		}
+	}
+}

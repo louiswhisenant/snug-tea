@@ -45,11 +45,11 @@
 			color: $color-2;
 
 			&:hover {
-				background-color: $dark;
+				background-color: $color-1;
 			}
 
 			&:active {
-				background-color: darken($dark, 10%);
+				background-color: darken($color-1, 5%);
 				color: lighten($light, 10%);
 			}
 		}
@@ -65,14 +65,36 @@
 					padding: 1rem;
 					width: 100%;
 					text-align: right;
+					transition: color 1s ease;
 
 					&:hover {
-						background-color: $dark;
+						background-color: $color-2;
 					}
 
 					&:active {
-						background-color: darken($dark, 10%);
+						background-color: darken($color-2, 5%);
 						color: lighten($light, 10%);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: $bp-md) {
+	#nav {
+		.navbar {
+			.nav-brand {
+				padding: 1.1rem;
+			}
+
+			.navbar-collapse {
+				height: initial;
+				position: static;
+
+				.navbar-nav {
+					.nav-item {
+						padding: 1.5rem;
 					}
 				}
 			}

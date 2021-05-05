@@ -44,7 +44,7 @@ const ContactForm = () => {
 			<ul className='actions'>
 				<li>
 					<button
-						className='btn btn-2'
+						className='btn'
 						onClick={(e) => {
 							handleCancel(e);
 						}}>
@@ -52,7 +52,7 @@ const ContactForm = () => {
 					</button>
 				</li>
 				<li>
-					<button type='submit' className='btn btn-2'>
+					<button type='submit' className='btn'>
 						Send
 					</button>
 				</li>

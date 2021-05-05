@@ -9,10 +9,10 @@ const services = () => {
 	return (
 		<main id='services'>
 			<MainNav
-				navBg={vars.colorOne75}
-				navBg2={vars.colorOne25}
-				collpaseBg={vars.colorOne}
-				collapseBg2={vars.colorOne25}
+				navBg='transparent'
+				navBg2={vars.colorOne75}
+				text={vars.light}
+				text2={vars.light}
 			/>
 			<div className='jumbotron'>
 				<img

@@ -18,10 +18,10 @@ const IndexPage = () => {
 	return (
 		<main className='main'>
 			<MainNav
-				navBg={vars.colorOne75}
-				navBg2='transparent'
-				collpaseBg={vars.colorOne}
-				collapseBg2='transparent'
+				navBg='transparent'
+				navBg2={vars.colorOne75}
+				text={vars.dark}
+				text2={vars.light}
 			/>
 			<div className='jumbotron'>
 				<img src={splash} alt='' className='splash-img' />
@@ -64,7 +64,7 @@ const IndexPage = () => {
 								</p>
 								<Link
 									to='/about'
-									className='col-10 col-md-3 mx-auto btn btn-2'>
+									className='col-10 col-md-3 mx-auto btn'>
 									About Us
 								</Link>
 							</Row>
@@ -133,7 +133,7 @@ const IndexPage = () => {
 								</p>
 								<Link
 									to='/services'
-									className='col-10 col-md-3 mx-auto btn btn-1'>
+									className='col-10 col-md-3 mx-auto btn'>
 									Our Services
 								</Link>
 							</Row>
@@ -194,7 +194,7 @@ const IndexPage = () => {
 								</p>
 								<Link
 									to='/contact'
-									className='col-10 col-md-3 mx-auto btn btn-2'>
+									className='col-10 col-md-3 mx-auto btn'>
 									Contact Us
 								</Link>
 							</Row>

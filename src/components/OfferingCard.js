@@ -10,7 +10,7 @@ const OfferingCard = ({ img, title, desc, to }) => {
 				<div className='offering-info'>
 					<h3 className='offering-title'>{title}</h3>
 					<p className='offering-desc'>{desc}</p>
-					<Link to={to} className='offering-btn btn btn-1'>
+					<Link to={to} className='offering-btn btn'>
 						Learn More
 					</Link>
 				</div>

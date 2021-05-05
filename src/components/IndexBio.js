@@ -10,10 +10,10 @@ const BioCard = ({ id, img, name, occupation }) => {
 				<div className='bio-info'>
 					<h3 className='bio-name'>{name}</h3>
 					<h4 className='bio-occupation'>{occupation}</h4>
+					<Link to={`/about#${id}`} className='bio-learn-more btn'>
+						Learn More
+					</Link>
 				</div>
-				<Link to={`/about#${id}`} className='btn btn-1'>
-					Learn More
-				</Link>
 			</Card>
 		</div>
 	);

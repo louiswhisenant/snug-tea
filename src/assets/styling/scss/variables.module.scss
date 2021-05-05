@@ -6,11 +6,21 @@
 
 $dark: #333;
 $light: #ccc;
-$color-1: #d4e9eb;
-$color-2: #af622e;
+// $color-1: #d4e9eb;
+// $color-2: #af622e;
+
+$color-1: #0e6870;
+$color-2: #c25106;
+$color-3: #8fc1ce;
 
 $font-1: 'Montserrat', sans-serif;
 $font-2: 'Orelega One', cursive;
+
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 922px;
+$bp-xl: 1200px;
+$bp-xxl: 1400px;
 
 :export {
 	light: $light;
@@ -23,4 +33,10 @@ $font-2: 'Orelega One', cursive;
 	colorTwo25: rgba($color-2, 0.25);
 	colorTwo50: rgba($color-2, 0.5);
 	colorTwo75: rgba($color-2, 0.75);
+
+	bpSM: $bp-sm;
+	bpMD: $bp-md;
+	bpLG: $bp-lg;
+	bpXL: $bp-xl;
+	bpXXL: $bp-xxl;
 }

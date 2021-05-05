@@ -1,16 +1,9 @@
 #contact {
-	position: relative;
-
-	.jumbotron {
-		z-index: -1;
-	}
-
 	.form-wrapper {
 		z-index: 3;
-		background-color: rgba($color-1, 0.6);
-		min-height: 100vh;
-		padding-top: 5rem;
-		max-height: 100vh;
+		background-color: rgba($color-3, 0.8);
+		height: 100vh;
+		padding-top: 7rem;
 		overflow-y: scroll;
 
 		-ms-overflow-style: none; /* IE and Edge */
@@ -26,7 +19,7 @@
 			margin: 0 auto;
 
 			.contact-desc {
-				margin-top: 5rem;
+				// margin-top: 5rem;
 				max-width: 75%;
 				text-align: center;
 			}
@@ -43,8 +36,8 @@
 				label {
 					margin-top: 1.5rem;
 					margin-bottom: 0.2rem;
-					color: $color-1;
-					background-color: $color-2;
+					color: $light;
+					background-color: $color-1;
 					padding: 0 1rem;
 					border-radius: 0.2rem;
 				}
@@ -55,7 +48,7 @@
 					border-radius: 0.2rem;
 					outline: none;
 					border: none;
-					background-color: lighten($color-1, 10%);
+					background-color: $light;
 				}
 
 				.actions {
@@ -65,9 +58,27 @@
 					margin-top: 1rem;
 					li {
 						list-style: none;
+
+						button {
+							min-width: 6rem;
+						}
 					}
 				}
 			}
+		}
+	}
+}
+
+@media (min-width: $bp-md) {
+	#contact {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		.form-wrapper {
+			height: initial;
+			margin-top: 7rem;
+			padding: 3rem 0;
+			border-radius: 0.4rem;
 		}
 	}
 }

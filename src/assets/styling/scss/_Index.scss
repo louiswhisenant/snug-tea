@@ -1,14 +1,19 @@
 #index-content {
 	padding-top: 100vh;
 
+	.bg-1,
+	.bg-2 {
+		display: none;
+	}
+
 	.index-banner-wrapper {
-		background-color: $color-2;
+		background-color: $color-1;
 		position: relative;
 
 		.index-banner-title {
 			color: lighten($light, 50%);
 			z-index: 2;
-			background-color: rgba(darken($color-1, 60%), 0.8);
+			background-color: rgba($color-1, 0.8);
 			margin: 0;
 			width: 100%;
 			padding: 3rem;
@@ -33,7 +38,7 @@
 				left: -25%;
 				height: 200%;
 				width: 150%;
-				background-color: darken($color-1, 60%);
+				background-color: darken($color-1, 10%);
 				z-index: 0;
 				transform: rotate(10deg);
 			}
@@ -49,7 +54,7 @@
 				left: 25%;
 				height: 100%;
 				width: 100%;
-				background-color: darken($color-2, 10%);
+				background-color: darken($color-1, 10%);
 				z-index: 0;
 				transform: rotate(270deg);
 			}
@@ -59,7 +64,7 @@
 				left: -50%;
 				height: 125%;
 				width: 150%;
-				background-color: $color-2;
+				background-color: lighten($color-1, 10%);
 				z-index: 0;
 				transform: rotate(75deg);
 			}
@@ -74,7 +79,7 @@
 				left: 25%;
 				height: 100%;
 				width: 100%;
-				background-color: darken($color-1, 25%);
+				background-color: darken($color-1, 15%);
 				z-index: 0;
 				transform: rotate(75deg);
 			}
@@ -84,7 +89,7 @@
 				left: -50%;
 				height: 125%;
 				width: 150%;
-				background-color: $color-1;
+				background-color: darken($color-1, 7.5%);
 				z-index: 0;
 				transform: rotate(280deg);
 			}
@@ -115,15 +120,36 @@
 	#index-about {
 		.index-about-bios {
 			min-height: 50vh;
-			padding-top: 3rem;
+			margin: 5rem 0;
 		}
 	}
 
 	#index-services {
-		// styling
+		.index-services-offerings {
+			margin: 5rem 0;
+		}
 	}
 
 	#index-contact {
 		// styling
+	}
+}
+
+@media (min-width: $bp-sm) {
+	// --------------------- .index-banner-title --------------------- //
+
+	#index-content {
+		.bg-1,
+		.bg-2 {
+			display: initial;
+		}
+
+		.index-banner-wrapper .index-banner-title {
+			padding: 2rem 4rem;
+			border-radius: 0.2rem;
+			margin: 4rem 0;
+			width: initial;
+			background-color: saturate(rgba($color-2, 0.8), 25%);
+		}
 	}
 }

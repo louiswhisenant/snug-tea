@@ -12,11 +12,10 @@ const about = () => {
 	return (
 		<main id='about'>
 			<MainNav
-				navBg={vars.colorTwo50}
-				navBg2={vars.colorTwo25}
-				collpaseBg={vars.colorTwo50}
-				collapseBg2={vars.colorTwo25}
+				navBg='transparent'
+				navBg2={vars.colorOne75}
 				text={vars.light}
+				text2={vars.light}
 			/>
 			<div className='jumbotron'>
 				<img src={right} alt='' className='splash-img' />

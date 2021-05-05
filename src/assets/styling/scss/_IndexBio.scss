@@ -6,7 +6,6 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		min-height: 25rem;
 		border: none;
 
 		.bio-img {
@@ -22,14 +21,25 @@
 			border-radius: 0.5rem;
 			background-color: $color-1;
 			color: $color-2;
+			min-height: 15rem;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-start;
 
 			.bio-name {
-				margin-top: 1rem;
+				margin-top: 2rem;
 				text-emphasis: bold;
 			}
 
 			.bio-occupation {
 				font-weight: 300;
+				color: $light;
+			}
+
+			.bio-learn-more {
+				margin-top: auto;
+				margin-bottom: 2rem;
 			}
 		}
 	}
