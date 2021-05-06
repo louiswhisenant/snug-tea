@@ -4,15 +4,16 @@
 // Components
 @import '_Nav.scss';
 @import '_ScrollDownAlert.scss';
-@import '_IndexBio.scss';
-@import '_AboutBio.scss';
-@import '_OfferingCard.scss';
+@import './index/_IndexBio.scss';
+@import './about/_AboutBio.scss';
+@import './index/_IndexOffering.scss';
+@import './services/_ServicesOffering.scss';
 
 // Pages
-@import '_Index.scss';
-@import '_About.scss';
-@import '_Services.scss';
-@import '_Contact.scss';
+@import './index/_Index.scss';
+@import './about/_About.scss';
+@import './services/_Services.scss';
+@import './contact/_Contact.scss';
 @import '_notFound.scss';
 
 // Classes

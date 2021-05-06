@@ -26,13 +26,14 @@ const about = () => {
 				</div>
 			</div>
 			<ScrollDownAlert />
+
 			<section id='about-content'>
 				<AboutBio
 					id='jimmy-stewart'
 					img={`https://images.unsplash.com/photo-1617209705012-a6a09a695036?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1070&q=80`}
 					name='Jimmy Stewart'
 					occupation='CEO'
-					fav='Earl Grey'
+					fav='Blood Orange Black Tea'
 					desc='Lorem ipsum dolor sit amet consectetur
 					adipisicing elit. Tenetur laborum facere
 					laudantium, id similique nam optio quidem dolore
@@ -44,7 +45,7 @@ const about = () => {
 					img={`https://images.unsplash.com/photo-1584997159889-8bb96d0a2217?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80`}
 					name='Gina Lollobrigida'
 					occupation='Marketing'
-					fav='Peach'
+					fav='Min-Pei Oolong'
 					desc='Lorem ipsum dolor sit amet consectetur
 							adipisicing elit. Tenetur laborum facere
 							laudantium, id similique nam optio quidem dolore
@@ -68,7 +69,7 @@ const about = () => {
 					img={`https://images.unsplash.com/photo-1602622021975-dacdcf516c43?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1069&q=80`}
 					name='Olivia Hussey'
 					occupation='Catering'
-					fav='Chamomile'
+					fav='Rose Congou Black Tea'
 					desc='Lorem ipsum dolor sit amet consectetur
 							adipisicing elit. Tenetur laborum facere
 							laudantium, id similique nam optio quidem dolore

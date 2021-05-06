@@ -4,8 +4,8 @@
 	color: $light;
 
 	&:hover {
-		background-color: darken($color-2, 4%);
-		color: lighten($light, 4%);
+		background-color: lighten($color-2, 5%);
+		color: $light;
 	}
 
 	&:focus {
@@ -16,6 +16,7 @@
 		background-color: darken($color-2, 5%);
 		margin-top: 0.3em;
 		margin-bottom: -0.3rem;
+		color: $light;
 	}
 }
 

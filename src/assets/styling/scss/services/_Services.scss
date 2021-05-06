@@ -1,0 +1,35 @@
+#services {
+	.jumbotron {
+		height: 50vh;
+		.splash-img {
+			filter: brightness(75%) contrast(50%) saturate(100%);
+		}
+	}
+
+	#services-content {
+		padding-top: 50vh;
+		max-width: 100vw;
+
+		.services-intro {
+			background-color: lighten($color-2, 7.5%);
+			min-height: 25vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			.services-intro-text {
+				text-align: center;
+				color: $light;
+				font-weight: 400;
+				font-size: 1.25rem;
+				margin: 3rem 0;
+
+				.lead {
+					color: $color-1;
+					font-weight: 600;
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+}

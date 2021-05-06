@@ -1,4 +1,4 @@
-.offering {
+.index-offering {
 	padding: 1rem;
 	.offering-card {
 		padding: 1rem;
@@ -40,7 +40,7 @@
 }
 
 @media (min-width: $bp-lg) {
-	.offering {
+	.index-offering {
 		.offering-card {
 			flex-direction: column;
 			.offering-img {

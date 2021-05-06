@@ -2,9 +2,9 @@ import React from 'react';
 import { Card } from 'reactstrap';
 import Link from 'gatsby-link';
 
-const OfferingCard = ({ img, title, desc, to }) => {
+const IndexOffering = ({ img, title, desc, to }) => {
 	return (
-		<div className='col-lg-6 col-md-12 offering'>
+		<div className='col-lg-6 col-md-12 index-offering'>
 			<Card className='offering-card'>
 				<img src={img} alt='' className='offering-img' />
 				<div className='offering-info'>
@@ -19,4 +19,4 @@ const OfferingCard = ({ img, title, desc, to }) => {
 	);
 };
 
-export default OfferingCard;
+export default IndexOffering;

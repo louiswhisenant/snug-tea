@@ -97,15 +97,15 @@
 	}
 
 	.index-blurb-anchor {
-		height: 50vh;
 		position: relative;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		min-height: calc(100vh - 12.5rem);
 
 		.index-blurb-bg {
 			position: absolute;
-			height: 50vh;
+			height: 100%;
 			width: 100%;
 			object-fit: cover;
 			filter: brightness(50%) contrast(70%);
@@ -150,6 +150,18 @@
 			margin: 4rem 0;
 			width: initial;
 			background-color: saturate(rgba($color-2, 0.8), 25%);
+		}
+
+		.index-blurb-anchor {
+			min-height: calc(100vh - 18.5rem);
+		}
+	}
+}
+
+@media (min-width: $bp-md) {
+	#index-content {
+		.index-blurb-anchor {
+			min-height: 50vh;
 		}
 	}
 }

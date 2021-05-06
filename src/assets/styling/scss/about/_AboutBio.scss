@@ -1,6 +1,11 @@
 .about-bio {
 	margin-top: 3rem;
 
+	.color-block {
+		background-color: pink;
+		height: 2rem;
+		margin-bottom: 1rem;
+	}
 	.about-bio-image {
 		display: flex;
 		align-items: center;
@@ -28,5 +33,12 @@
 			border: 1px solid $dark;
 			margin-bottom: 5rem;
 		}
+	}
+}
+
+@media (min-width: $bp-lg) {
+	.about-bio .color-block {
+		height: auto;
+		margin-bottom: 0;
 	}
 }

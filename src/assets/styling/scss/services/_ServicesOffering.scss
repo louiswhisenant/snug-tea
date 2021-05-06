@@ -1,0 +1,49 @@
+.services-offering {
+	.offering-banner {
+		position: relative;
+		height: 15rem;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.offering-banner-img {
+			position: absolute;
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+			z-index: 0;
+		}
+
+		.offering-banner-title {
+			z-index: 3;
+			background-color: rgba($color-1, 0.8);
+			color: $light;
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+	}
+
+	.offering-info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		margin: 3rem 0;
+	}
+}
+
+@media (min-width: $bp-md) {
+	.services-offering .offering-banner .offering-banner-title {
+		height: initial;
+		width: initial;
+		padding: 2rem 3rem;
+		border-radius: 0.2rem;
+	}
+}
