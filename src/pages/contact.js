@@ -16,6 +16,10 @@ const contact = () => {
 			/>
 			<Container className='form-wrapper'>
 				<Row>
+					<div className='contact-title col-12'>
+						<h2>Contact Us</h2>
+						<hr />
+					</div>
 					<div className='col-12 contact-desc'>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing
